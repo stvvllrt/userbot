@@ -6,6 +6,8 @@ api_id = "14203507"
 api_hash = "ed5fc765d495d656b7969995787aeddf"
 app = Client("my_account", api_id=api_id, api_hash=api_hash)
 
+#heeeeeeeeeeeeeeeeeelp
+
 @app.on_message(filters.chat("vk_tea_chat"))
 async def hello(client, message):
     user_id = message.from_user.id
