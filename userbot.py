@@ -2,9 +2,8 @@ from pyrogram import Client, filters
 from datetime import datetime, timedelta
 from pyrogram.types import ChatPermissions
 from pyrogram import enums
-api_id = "14203507" 
-api_hash = "ed5fc765d495d656b7969995787aeddf"
-app = Client("my_account", api_id=api_id, api_hash=api_hash)
+
+app = Client("my_account")
 
 #heeeeeeeeeeeeeeeeeelp
 
