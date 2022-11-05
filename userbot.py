@@ -17,5 +17,5 @@ async def hello(client, message):
         if msg[0] == ".tmute":
             await app.restrict_chat_member(message.chat.id, message.reply_to_message.from_user.id ,ChatPermissions(can_send_messages=False), datetime.now() + timedelta(hours=int(msg[1])))
         if msg[0] == ".pardon":
-            await app.restrict_chat_member(message.chat.id, message.reply_to_message.from_user.id ,ChatPermissions(can_send_messages=True)) 
+            await app.restrict_chat_member(message.chat.id, message.reply_to_message.from_user.id ,ChatPermissions(can_send_messages=True,can_send_media_messages=True,can_add_web_page_previews=True,can_send_other_messages=True,can_send_polls=True)) 
 app.run()
